@@ -1,0 +1,6 @@
+{
+  "name": "Gereja Baptis Yohanes Entrop",
+  "description": "Website Resmi Gereja Baptis Yohanes Entrop dengan informasi jemaat, pelayanan, berita, galeri, dan donasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
