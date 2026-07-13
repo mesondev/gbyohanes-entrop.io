@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Gereja Baptis Yohanes Entrop</title>
+    <title>Galeri - Gereja Baptis Yohanes Entrop</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,16 +56,6 @@
         @keyframes loading-bar {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(200%); }
-        }
-
-        /* Animasi Zoom Lambat untuk Background Jumbotron Hero */
-        @keyframes zoomSlow {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-            100% { transform: scale(1); }
-        }
-        .animate-zoom-slow {
-            animation: zoomSlow 25s ease-in-out infinite;
         }
     </style>
 </head>
@@ -154,7 +144,7 @@
                         <!-- Beranda -->
                         <div class="relative py-2">
                             <a href="index.html" 
-                               class="flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none bg-blue-50 text-blue-900 font-semibold border-b-2 border-blue-900 rounded-b-none">
+                               class="flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none text-slate-600 hover:bg-slate-50 hover:text-blue-950">
                                 Beranda
                             </a>
                         </div>
@@ -238,7 +228,7 @@
                                         <span>Komisi Pemuda (PPA)</span>
                                     </a>
                                     <a href="pelayanan.html?sub=remaja" class="flex items-center space-x-3 w-full text-left px-3 py-2 rounded-lg text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-900">
-                                        <i data-lucide="users" class="w-4 h-4 text-indigo-600"></i>
+                                        <i data-lucide="users" class="w-4 h-4 text-purple-600"></i>
                                         <span>Persekutuan Remaja</span>
                                     </a>
                                     <a href="pelayanan.html?sub=wanita" class="flex items-center space-x-3 w-full text-left px-3 py-2 rounded-lg text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-900">
@@ -367,7 +357,7 @@
                         <div class="relative py-2" 
                              x-on:mouseenter="activeDropdown = 'galeri'" 
                              x-on:mouseleave="activeDropdown = null">
-                            <button class="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none cursor-pointer text-slate-600 hover:bg-slate-50 hover:text-blue-950">
+                            <button class="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none cursor-pointer bg-blue-50 text-blue-900 font-semibold border-b-2 border-blue-900 rounded-b-none">
                                 <span>Galeri</span>
                                 <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200" :class="{ 'rotate-180': activeDropdown === 'galeri' }"></i>
                             </button>
@@ -461,7 +451,7 @@
                     
                     <!-- Beranda -->
                     <div class="border-b border-slate-100/50 pb-1">
-                        <a href="index.html" class="flex items-center justify-between w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold bg-blue-900 text-white shadow-sm">
+                        <a href="index.html" class="flex items-center justify-between w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100">
                             <span>Beranda</span>
                         </a>
                     </div>
@@ -481,22 +471,6 @@
                                 <i data-lucide="award" class="w-3.5 h-3.5 text-blue-600"></i>
                                 <span>Visi & Misi</span>
                             </a>
-                            <a href="profil.html?sub=logo" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="church" class="w-3.5 h-3.5 text-emerald-600"></i>
-                                <span>Logo Gereja</span>
-                            </a>
-                            <a href="profil.html?sub=gembala" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="user" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Gembala Sidang</span>
-                            </a>
-                            <a href="profil.html?sub=struktur" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Struktur Organisasi</span>
-                            </a>
-                            <a href="profil.html?sub=pengurus" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Pengurus & Staff</span>
-                            </a>
                         </div>
                     </div>
 
@@ -510,26 +484,6 @@
                             <a href="pelayanan.html?sub=ibadah-minggu" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
                                 <i data-lucide="church" class="w-3.5 h-3.5 text-blue-500"></i>
                                 <span>Ibadah Raya Minggu</span>
-                            </a>
-                            <a href="pelayanan.html?sub=sekolah-minggu" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="award" class="w-3.5 h-3.5 text-emerald-600"></i>
-                                <span>Sekolah Minggu</span>
-                            </a>
-                            <a href="pelayanan.html?sub=pemuda" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Komisi Pemuda</span>
-                            </a>
-                            <a href="pelayanan.html?sub=remaja" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Persekutuan Remaja</span>
-                            </a>
-                            <a href="pelayanan.html?sub=wanita" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Kaum Wanita (WBI)</span>
-                            </a>
-                            <a href="pelayanan.html?sub=pria" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-600"></i>
-                                <span>Kaum Pria (PBI)</span>
                             </a>
                         </div>
                     </div>
@@ -545,13 +499,19 @@
                                 <i data-lucide="calendar" class="w-3.5 h-3.5 text-amber-600"></i>
                                 <span>Jadwal Ibadah</span>
                             </a>
-                            <a href="jadwal.html?sub=sekolah-minggu" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-amber-600"></i>
-                                <span>Sekolah Minggu</span>
-                            </a>
-                            <a href="jadwal.html?sub=pemuda" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-amber-600"></i>
-                                <span>Pemuda & Remaja</span>
+                        </div>
+                    </div>
+
+                    <!-- Galeri -->
+                    <div class="border-b border-slate-100/50 pb-1" x-data="{ open: true }">
+                        <button x-on:click="open = !open" class="flex items-center justify-between w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold bg-blue-900 text-white shadow-sm">
+                            <span>Galeri</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200" :class="{ 'rotate-180': open }"></i>
+                        </button>
+                        <div class="pl-4 mt-1 grid grid-cols-1 gap-1 border-l-2 border-slate-200 ml-4 py-1" x-show="open" x-cloak>
+                            <a href="galeri.html?sub=foto" class="flex items-center space-x-2 text-left px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+                                <i data-lucide="image" class="w-3.5 h-3.5 text-purple-600"></i>
+                                <span>Foto Kegiatan</span>
                             </a>
                         </div>
                     </div>
@@ -576,366 +536,251 @@
 
         <!-- Main Content Area -->
         <main class="relative overflow-hidden min-h-[60vh]">
-            <div class="font-sans min-h-screen bg-slate-50" x-data="{
-                currentVerseIndex: 0,
-                verses: [
-                    { text: 'Janganlah hendaknya kamu kuatir tentang apapun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur.', ref: 'Filipi 4:6' },
-                    { text: 'Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan.', ref: 'Yeremia 29:11' },
-                    { text: 'Serahkanlah kuatirmu kepada TUHAN, maka Ia akan memelihara engkau! Tidak untuk selama-lamanya dibiarkan-Nya orang benar itu goyah.', ref: 'Mazmur 55:23' },
-                    { text: 'Tetapi orang-orang yang menanti-nantikan TUHAN mendapat kekuatan baru: mereka seumpama rajawali yang naik terbang dengan kekuatan sayapnya; mereka berlari dan tidak menjadi lesu, mereka berjalan dan tidak menjadi lelah.', ref: 'Yesaya 40:31' },
-                    { text: 'Kasihilah seorang akan yang lain dengan kasih persaudaraan yang tulus dan saling mendahuluilah dalam memberi hormat.', ref: 'Roma 12:10' }
-                ],
-                getNewVerse() {
-                    this.currentVerseIndex = (this.currentVerseIndex + 1) % this.verses.length;
-                },
-                prayerForm: { name: '', phone: '', request: '' },
-                prayerSubmitted: false,
-                submitPrayer() {
-                    if (!this.prayerForm.request.trim()) return;
-                    this.prayerSubmitted = true;
-                    setTimeout(() => {
-                        this.prayerForm = { name: '', phone: '', request: '' };
-                    }, 500);
-                }
-            }">
-                
-                <!-- 1. HERO SECTION - Dengan Background Animasi Zoom dan Overlay Biru Transparan -->
-                <section class="relative overflow-hidden text-white py-20 lg:py-32">
-                    <!-- Background Gambar Animasi Zoom Lambat -->
-                    <div class="absolute inset-0 z-0 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1920&q=80" 
-                             alt="Interior GBY Entrop" 
-                             class="w-full h-full object-cover object-center animate-zoom-slow" />
-                        <!-- Transparan Color Biru Overlay -->
-                        <div class="absolute inset-0 bg-blue-950/85 backdrop-blur-[1px]"></div>
-                    </div>
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
-                        <div class="inline-flex items-center space-x-2 bg-amber-500/10 text-amber-400 border border-amber-500/20 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mx-auto">
-                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-                            <span>Terang Kristus Bagi Tanah Papua</span>
-                        </div>
-                        
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display leading-tight tracking-tight text-white">
-                            GEREJA BAPTIS <br />
-                            <span class="text-amber-400">YOHANES ENTROP</span>
+            <div class="font-sans min-h-screen bg-slate-50 py-12 lg:py-16"
+                 x-data="{
+                    activeTab: new URLSearchParams(window.location.search).get('sub') || 'foto',
+                    lightboxIndex: null,
+                    activeVideoUrl: null,
+
+                    galleryItems: [
+                        {
+                            id: 'photo-1',
+                            type: 'foto',
+                            title: 'Pelaksanaan Sakramen Baptisan Selam Kudus di Pantai Hamadi',
+                            description: 'Peneguhan baptisan kudus bagi 15 jemaat baru yang dibaptis oleh Gembala Sidang di pesisir Pantai Hamadi, Jayapura.',
+                            category: 'Ibadah',
+                            thumbnail: 'https://picsum.photos/seed/bapt/800/600'
+                        },
+                        {
+                            id: 'photo-2',
+                            type: 'foto',
+                            title: 'Kebersamaan Kelas Sekolah Minggu Anak - Kelas Pratama',
+                            description: 'Anak-anak Sekolah Minggu berfoto bersama usai membawakan vokal grup pujian anak dalam perayaan HUT gereja.',
+                            category: 'Komisi Anak',
+                            thumbnail: 'https://picsum.photos/seed/kidsclass/800/600'
+                        },
+                        {
+                            id: 'photo-3',
+                            type: 'foto',
+                            title: 'Paduan Suara Komisi Wanita (WBI) GBY Entrop',
+                            description: 'Persembahan pujian syukur paduan suara Ibu-Ibu jemaat dalam perayaan kebaktian padang Sektor Entrop Atas.',
+                            category: 'Paduan Suara',
+                            thumbnail: 'https://picsum.photos/seed/choir/800/600'
+                        },
+                        {
+                            id: 'photo-4',
+                            type: 'foto',
+                            title: 'Aksi Bersih Lingkungan Pemuda Kristen Sektor Jayapura Selatan',
+                            description: 'Komisi Pemuda (PPA) bergotong royong bersama komunitas warga sekitar membersihkan parit dan selokan jalan raya.',
+                            category: 'Sosial',
+                            thumbnail: 'https://picsum.photos/seed/clean/800/600'
+                        },
+                        {
+                            id: 'photo-5',
+                            type: 'foto',
+                            title: 'Ibadah Kebaktian Padang di Cagar Alam Cycloop',
+                            description: 'Suasana persekutuan ibadah padang keluarga jemaat di bawah teduhnya pepohonan lereng gunung Cycloop, Sentani.',
+                            category: 'Kebaktian Padang',
+                            thumbnail: 'https://picsum.photos/seed/nature/800/600'
+                        },
+                        {
+                            id: 'photo-6',
+                            type: 'foto',
+                            title: 'Rapat Koordinasi BPH Jemaat & Majelis Penatua',
+                            description: 'BPH merancang agenda rencana kerja tahunan dan pengutusan pos PI baru di ruang rapat sekretariat gereja.',
+                            category: 'Administrasi',
+                            thumbnail: 'https://picsum.photos/seed/board/800/600'
+                        },
+                        // Videos
+                        {
+                            id: 'video-1',
+                            type: 'video',
+                            title: 'Dokumenter Perjalanan Pelayanan Misi 40 Tahun GBY Entrop',
+                            description: 'Rangkuman sejarah perjuangan para perintis mendirikan gereja di wilayah rawa Entrop Jayapura tahun 1981.',
+                            category: 'Dokumenter',
+                            thumbnail: 'https://picsum.photos/seed/v1/800/450',
+                            url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+                        },
+                        {
+                            id: 'video-2',
+                            type: 'video',
+                            title: 'Ibadah Raya Mingguan Live Streaming - Minggu, 12 Juli 2026',
+                            description: 'Siaran ulang rekaman utuh Kebaktian Utama GBY Entrop. Pengkhotbah: Pdt. Yohanes Kogoya, M.Th. Tema: Berakar Dalam Kristus.',
+                            category: 'Ibadah Raya',
+                            thumbnail: 'https://picsum.photos/seed/v2/800/450',
+                            url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+                        },
+                        {
+                            id: 'video-3',
+                            type: 'video',
+                            title: 'Klip Persembahan Pujian Koor Pemuda Kristen \'Satu Tubuh di dalam Kasih\'',
+                            description: 'Vokal grup gabungan Pemuda dan Remaja GBY Entrop dalam ibadah syukuran pemuda triwulan se-Jayapura.',
+                            category: 'Musik',
+                            thumbnail: 'https://picsum.photos/seed/v3/800/450',
+                            url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+                        }
+                    ],
+
+                    get photos() {
+                        return this.galleryItems.filter(item => item.type === 'foto');
+                    },
+
+                    get videos() {
+                        return this.galleryItems.filter(item => item.type === 'video');
+                    },
+
+                    nextPhoto() {
+                        if (this.lightboxIndex === null) return;
+                        this.lightboxIndex = (this.lightboxIndex + 1) % this.photos.length;
+                    },
+
+                    prevPhoto() {
+                        if (this.lightboxIndex === null) return;
+                        this.lightboxIndex = (this.lightboxIndex - 1 + this.photos.length) % this.photos.length;
+                    }
+                 }">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <!-- Header -->
+                    <div class="text-center space-y-3 mb-10">
+                        <span class="text-amber-700 font-bold text-xs uppercase tracking-wider">Dokumentasi & Memori</span>
+                        <h1 class="text-3xl sm:text-4xl font-bold font-display text-blue-950 tracking-tight">
+                            Galeri GBY Entrop
                         </h1>
-                        
-                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
-                            Menjadi jemaat yang berakar di dalam Kristus, bertumbuh dalam kebenaran Firman Tuhan, dan berbuah lebat bagi kemuliaan Bapa serta sesama di Jayapura.
+                        <p class="text-sm text-slate-500 max-w-xl mx-auto font-light">
+                            Potret sukacita, persekutuan doa, perayaan sakramen kudus, and pelayanan penjangkauan jemaat kami di Jayapura.
                         </p>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                            <a href="jadwal.html?sub=ibadah"
-                               class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold rounded-xl text-sm transition-all duration-150 flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/10">
-                                <i data-lucide="calendar" class="w-4 h-4"></i>
-                                <span>Jadwal Ibadah Minggu</span>
-                            </a>
-                            <a href="profil.html?sub=sejarah"
-                               class="px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-medium rounded-xl text-sm transition-all duration-150 flex items-center justify-center space-x-2">
-                                <span>Kenal Kami Lebih Dekat</span>
-                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                            </a>
+                    </div>
+
+                    <!-- Filter Subtab -->
+                    <div class="flex justify-center border-b border-slate-200 mb-10">
+                        <div class="flex space-x-8">
+                            <button x-on:click="activeTab = 'foto'; window.history.replaceState(null, '', '?sub=foto'); $nextTick(() => lucide.createIcons());"
+                                    class="pb-4 text-sm font-bold border-b-2 transition-colors cursor-pointer focus:outline-none"
+                                    :class="activeTab === 'foto' ? 'border-blue-900 text-blue-950 font-bold' : 'border-transparent text-slate-500 hover:text-blue-950'">
+                                <span>Foto Kegiatan</span>
+                            </button>
+                            <button x-on:click="activeTab = 'video'; window.history.replaceState(null, '', '?sub=video'); $nextTick(() => lucide.createIcons());"
+                                    class="pb-4 text-sm font-bold border-b-2 transition-colors cursor-pointer focus:outline-none"
+                                    :class="activeTab === 'video' ? 'border-blue-900 text-blue-950 font-bold' : 'border-transparent text-slate-500 hover:text-blue-950'">
+                                <span>Video Ibadah & Dokumenter</span>
+                            </button>
                         </div>
                     </div>
-                </section>
 
-                <!-- 2. VERSE OF THE DAY SECTION -->
-                <section class="py-10 bg-blue-50 border-y border-blue-100">
-                    <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
-                        <div class="inline-flex items-center space-x-1.5 text-amber-700 font-bold text-xs uppercase tracking-wider">
-                            <i data-lucide="sparkles" class="w-4 h-4"></i>
-                            <span>Ayat Alkitab Hari Ini</span>
-                        </div>
-                        <div class="space-y-3">
-                            <p class="text-base sm:text-lg md:text-xl font-display font-medium text-slate-800 leading-relaxed italic"
-                               x-text="'“' + verses[currentVerseIndex].text + '”'">
-                            </p>
-                            <p class="text-xs sm:text-sm text-blue-900 font-bold"
-                               x-text="'— ' + verses[currentVerseIndex].ref">
-                            </p>
-                        </div>
-                        <button x-on:click="getNewVerse()"
-                                class="mt-2 px-4 py-1.5 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 font-medium text-xs rounded-full transition-colors cursor-pointer">
-                            Dapatkan Ayat Lain
-                        </button>
-                    </div>
-                </section>
-
-                <!-- 3. KEY STATS -->
-                <section class="py-16 bg-white border-b border-slate-100">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                            
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="users" class="w-7 h-7 text-blue-800 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">350+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Jemaat Aktif</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="church" class="w-7 h-7 text-amber-600 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">14+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Komisi Pelayanan</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="heart-handshake" class="w-7 h-7 text-rose-500 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">12+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Wilayah Sel/Sektor</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="award" class="w-7 h-7 text-emerald-600 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">45 Th</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Melayani di Papua</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <!-- SAMBUTAN GEMBALA & TENTANG KAMI SECTION / BAGIAN SAMBUTAN & TENTANG GEREJA -->
-                <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-100">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-                        
-                        <!-- 1. Sambutan Gembala Sidang -->
-                        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                            <!-- Foto Gembala (Samping Kiri) -->
-                            <div class="md:col-span-5 flex justify-center">
-                                <div class="relative">
-                                    <div class="absolute -inset-1 bg-gradient-to-tr from-amber-500 to-blue-900 rounded-3xl blur opacity-20"></div>
-                                    <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-slate-100">
-                                        <!-- Foto Pastor dengan Ilustrasi Hangat -->
-                                        <div class="w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden bg-slate-100 flex flex-col justify-end relative">
-                                            <!-- Pastor Silhouette dalam SVG Gradient -->
-                                            <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full text-slate-300" preserveAspectRatio="none">
-                                                <defs>
-                                                    <linearGradient id="pastorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                                        <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.1"/>
-                                                        <stop offset="100%" stop-color="#020617" stop-opacity="0.3"/>
-                                                    </linearGradient>
-                                                </defs>
-                                                <rect width="100" height="100" fill="url(#pastorGrad)" />
-                                                <!-- Siluet Kepala & Bahu Pastor -->
-                                                <circle cx="50" cy="35" r="18" fill="#cbd5e1" />
-                                                <path d="M 50,55 C 30,55 20,70 20,100 L 80,100 C 80,70 70,55 50,55 Z" fill="#94a3b8" />
-                                                <path d="M 45,55 L 50,65 L 55,55 Z" fill="#ffffff" /> <!-- Kerah Pastor -->
-                                            </svg>
-                                            <!-- Label Keterangan Gembala -->
-                                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent p-5 text-white">
-                                                <p class="font-display font-bold text-base leading-tight">Pdt. Yohanes Tabuni, M.Th.</p>
-                                                <p class="text-xs text-amber-400 font-light mt-0.5">Gembala Sidang GBY Entrop</p>
-                                            </div>
+                    <!-- PHOTO CONTAINER -->
+                    <div x-show="activeTab === 'foto'" x-cloak>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <template x-for="(photo, idx) in photos" :key="photo.id">
+                                <div x-on:click="lightboxIndex = idx"
+                                     class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                                    <div class="relative h-56 overflow-hidden bg-slate-100">
+                                        <img :src="photo.thumbnail" alt="Thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" referrerpolicy="no-referrer" />
+                                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                            <span class="p-3 bg-white/95 rounded-full text-blue-950 shadow-md">
+                                                <i data-lucide="eye" class="w-5 h-5"></i>
+                                            </span>
                                         </div>
                                     </div>
-                                    <!-- Hiasan Sudut Frame -->
-                                    <div class="absolute -bottom-4 -left-4 w-12 h-12 border-b-4 border-l-4 border-amber-500 rounded-bl-xl z-[-1]"></div>
-                                    <div class="absolute -top-4 -right-4 w-12 h-12 border-t-4 border-r-4 border-blue-900 rounded-tr-xl z-[-1]"></div>
-                                </div>
-                            </div>
-                            
-                            <!-- Teks Surat Sambutan Gembala (Samping Kanan) -->
-                            <div class="md:col-span-7 space-y-6 text-slate-800">
-                                <div class="space-y-2">
-                                    <span class="text-amber-700 font-bold text-xs uppercase tracking-wider block">Sambutan Hangat</span>
-                                    <h2 class="text-3xl font-bold font-display text-blue-950 tracking-tight leading-tight">
-                                        Selamat Datang di GBY Entrop
-                                    </h2>
-                                </div>
-                                <div class="space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
-                                    <p class="font-medium text-slate-800">
-                                        Syalom, Salam sejahtera dalam kasih Tuhan Yesus Kristus!
-                                    </p>
-                                    <p>
-                                        Atas nama seluruh jemaat dan majelis jemaat Gereja Baptis Yohanes Entrop Jayapura, saya menyambut Anda dengan sukacita di media informasi digital kami. Website ini kami bangun sebagai jembatan silaturahmi, pusat warta jemaat, serta pintu informasi bagi setiap jiwa yang rindu bertumbuh dalam kebenaran Firman Tuhan.
-                                    </p>
-                                    <p>
-                                        Di tanah Papua ini, kami rindu menjadi wadah persekutuan yang bersahabat, sehat, dan dipimpin oleh Roh Kudus. Di sini, setiap pribadi dari berbagai latar belakang dihargai sebagai satu tubuh di dalam Kristus, didorong untuk menggali potensi karunia rohani, serta diutus untuk membawa dampak damai sejahtera bagi masyarakat sekitar.
-                                    </p>
-                                    <p>
-                                        Mari bersama kami berakar kuat dalam iman, bertumbuh dalam kekudusan karakter, dan berbuah lebat melalui kesaksian pelayanan kasih yang tulus. Kiranya berkat Kristus melingkupi keluarga Anda.
-                                    </p>
-                                </div>
-                                <div class="flex items-center space-x-3 pt-2">
-                                    <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-900 flex items-center justify-center">
-                                        <i data-lucide="heart" class="w-5 h-5 text-rose-500 animate-pulse"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs font-semibold text-slate-900">Pdt. Yohanes Tabuni, M.Th.</p>
-                                        <p class="text-[10px] text-slate-400">Gembala Sidang & Pelayan Jemaat</p>
+                                    <div class="p-5 space-y-2">
+                                        <span class="bg-blue-100 text-blue-950 text-[9px] font-bold px-2 py-0.5 rounded uppercase" x-text="photo.category"></span>
+                                        <h3 class="text-sm font-bold text-blue-950 font-display leading-tight" x-text="photo.title"></h3>
+                                        <p class="text-[11px] text-slate-500 font-light truncate" x-text="photo.description"></p>
                                     </div>
                                 </div>
-                            </div>
+                            </template>
                         </div>
-
-                        <!-- 2. Tentang Kami (About Us) -->
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 border-t border-slate-200/60 items-center">
-                            <!-- Deskripsi & Sejarah Singkat -->
-                            <div class="lg:col-span-6 space-y-6">
-                                <div class="space-y-2">
-                                    <span class="text-blue-900 font-bold text-xs uppercase tracking-wider block">Mengenal Kami</span>
-                                    <h2 class="text-3xl font-bold font-display text-blue-950 tracking-tight leading-tight">
-                                        Gereja yang Bertumpu pada Firman & Kasih Persaudaraan
-                                    </h2>
-                                </div>
-                                <div class="space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
-                                    <p>
-                                        Gereja Baptis Yohanes Entrop didirikan di Kota Jayapura, Papua, dengan komitmen teguh untuk menjalankan Amanat Agung Tuhan Yesus Kristus (Matius 28:19-20). Sebagai bagian dari Persekutuan Gereja-Gereja Baptis Papua (PGBP), kami terus berakar dalam pengajaran Alkitab yang sehat and murni.
-                                    </p>
-                                    <p>
-                                        Kami percaya bahwa iman sejati melahirkan perbuatan kasih. Oleh karena itu, pelayanan kami tidak hanya terbatas di dalam gedung ibadah pada hari Minggu, melainkan menjangkau pelayanan kategorial anak, pemuda, kaum pria, kaum wanita, persekutuan sel di rumah-rumah jemaat, misi sosial di pedalaman Papua, hingga pelayanan konseling keluarga Kristen.
-                                    </p>
-                                </div>
-                                <div class="flex gap-4 pt-2">
-                                    <a href="profil.html?sub=sejarah" class="inline-flex items-center space-x-2 text-xs font-bold text-blue-900 hover:text-blue-950 transition-colors">
-                                        <span>Baca Sejarah Lengkap</span>
-                                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Pilar Nilai Pelayanan (Cards) -->
-                            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
-                                <!-- Pilar 1 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center shrink-0">
-                                        <i data-lucide="arrow-down-to-dot" class="w-5 h-5 text-blue-700"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Berakar (Rooted)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Memiliki dasar iman yang kuat kepada Yesus Kristus serta doktrin Alkitab yang sejati dan tidak tergoyahkan oleh zaman.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Pilar 2 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center shrink-0">
-                                        <i data-lucide="trending-up" class="w-5 h-5 text-amber-600"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Bertumbuh (Growing)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Terus mendewasakan karakter rohani jemaat, ketaatan rohani, serta ikatan kasih persaudaraan sejati yang saling menopang.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Pilar 3 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
-                                        <i data-lucide="leaf" class="w-5 h-5 text-emerald-600"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Berbuah (Fruitful)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Aktif mengabarkan kabar baik Injil, melayani sesama lewat pelayanan kasih nyata, serta menjadi berkat di mana pun jemaat diutus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </section>
 
-                <!-- 4. MAIN QUICK SERVICES GRID -->
-                <section class="py-16 lg:py-20">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- VIDEO CONTAINER -->
+                    <div x-show="activeTab === 'video'" x-cloak>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <template x-for="vid in videos" :key="vid.id">
+                                <div x-on:click="activeVideoUrl = vid.url"
+                                     class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                                    <div class="relative h-48 overflow-hidden bg-slate-100">
+                                        <img :src="vid.thumbnail" alt="Thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" referrerpolicy="no-referrer" />
+                                        <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
+                                            <span class="p-4 bg-amber-500 text-blue-950 rounded-full shadow-lg transform group-hover:scale-110 transition-transform">
+                                                <i data-lucide="play" class="w-6 h-6 fill-blue-950 text-blue-950 ml-0.5"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="p-5 space-y-2">
+                                        <span class="bg-purple-100 text-purple-950 text-[9px] font-bold px-2 py-0.5 rounded uppercase" x-text="vid.category"></span>
+                                        <h3 class="text-sm font-bold text-blue-950 font-display leading-tight" x-text="vid.title"></h3>
+                                        <p class="text-[11px] text-slate-500 font-light leading-relaxed" x-text="vid.description"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- PHOTO LIGHTBOX MODAL -->
+                    <div x-show="lightboxIndex !== null" 
+                         class="fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-50 flex flex-col justify-between p-4"
+                         x-cloak>
                         
-                        <div class="text-center space-y-3 max-w-2xl mx-auto mb-12">
-                            <h2 class="text-3xl font-bold font-display text-blue-950 tracking-tight">
-                                Fokus Utama Pelayanan Jemaat
-                            </h2>
-                            <p class="text-sm text-slate-500 leading-relaxed font-light">
-                                Gereja Baptis Yohanes Entrop berkomitmen mendampingi setiap tahapan pertumbuhan iman Anda dan keluarga melalui berbagai ibadah dan persekutuan.
-                            </p>
+                        <!-- Header bar -->
+                        <div class="flex items-center justify-between text-white p-4">
+                            <span class="text-xs font-semibold" x-text="lightboxIndex !== null ? (lightboxIndex + 1) + ' / ' + photos.length : ''"></span>
+                            <button x-on:click="lightboxIndex = null" 
+                                    class="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white cursor-pointer transition-colors">
+                                <i data-lucide="x" class="w-5 h-5"></i>
+                            </button>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            
-                            <!-- Kebaktian Anak & Sekolah Minggu -->
-                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                                <div class="space-y-4">
-                                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold font-display">
-                                        K1
-                                    </div>
-                                    <h3 class="text-lg font-bold font-display text-blue-950">Komisi Anak & Sekolah Minggu</h3>
-                                    <p class="text-xs text-slate-500 leading-relaxed font-light">
-                                        Membina karakter spiritual anak sejak usia dini dengan metode pembelajaran Alkitab yang kreatif, ceria, dan penuh kegembiraan kristiani.
-                                    </p>
-                                </div>
-                                <a href="pelayanan.html?sub=sekolah-minggu" 
-                                   class="mt-6 inline-flex items-center space-x-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-800">
-                                    <span>Selengkapnya</span>
-                                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                                </a>
+                        <!-- Image Stage -->
+                        <div class="flex items-center justify-between w-full h-full max-h-[70vh] relative">
+                            <!-- Prev Button -->
+                            <button x-on:click="prevPhoto()" 
+                                    class="absolute left-2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full cursor-pointer z-10 transition-colors">
+                                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                            </button>
+
+                            <!-- Centered Photo -->
+                            <div class="w-full h-full flex items-center justify-center px-12">
+                                <template x-if="lightboxIndex !== null">
+                                    <img :src="photos[lightboxIndex].thumbnail" alt="Full Image" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl animate-fade-in" referrerpolicy="no-referrer" />
+                                </template>
                             </div>
 
-                            <!-- Pemuda & Remaja -->
-                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                                <div class="space-y-4">
-                                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold font-display">
-                                        K2
-                                    </div>
-                                    <h3 class="text-lg font-bold font-display text-blue-950">Perhimpunan Pemuda & Remaja</h3>
-                                    <p class="text-xs text-slate-500 leading-relaxed font-light">
-                                        Menjadi wadah berekspresi, berbagi, dan berdiskusi yang sehat bagi generasi muda di tengah tantangan zaman, berakar kuat di dalam nilai Alkitabiah.
-                                    </p>
-                                </div>
-                                <a href="pelayanan.html?sub=pemuda" 
-                                   class="mt-6 inline-flex items-center space-x-1.5 text-xs font-semibold text-blue-700 hover:text-blue-800">
-                                    <span>Selengkapnya</span>
-                                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                                </a>
-                            </div>
+                            <!-- Next Button -->
+                            <button x-on:click="nextPhoto()" 
+                                    class="absolute right-2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full cursor-pointer z-10 transition-colors">
+                                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                            </button>
+                        </div>
 
-                            <!-- Kaum Pria & Wanita -->
-                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                                <div class="space-y-4">
-                                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold font-display">
-                                        K3
-                                    </div>
-                                    <h3 class="text-lg font-bold font-display text-blue-950">Persekutuan Bapak & Ibu</h3>
-                                    <p class="text-xs text-slate-500 leading-relaxed font-light">
-                                        Mendampingi keluarga-keluarga Kristen agar harmonis, saling membangun, dan menjadi teladan pelayanan di gereja, lingkungan kerja, serta masyarakat sekitar.
-                                    </p>
+                        <!-- Footer Details -->
+                        <div class="text-center text-white max-w-xl mx-auto p-6 space-y-2">
+                            <template x-if="lightboxIndex !== null">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold font-display" x-text="photos[lightboxIndex].title"></h3>
+                                    <p class="text-xs text-slate-400 font-light leading-relaxed mt-1" x-text="photos[lightboxIndex].description"></p>
                                 </div>
-                                <div class="mt-6 flex space-x-4">
-                                    <a href="pelayanan.html?sub=pria" 
-                                       class="inline-flex items-center space-x-1.5 text-xs font-semibold text-amber-700 hover:text-amber-800">
-                                        <span>Bapak (PBI)</span>
-                                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                                    </a>
-                                    <a href="pelayanan.html?sub=wanita" 
-                                       class="inline-flex items-center space-x-1.5 text-xs font-semibold text-amber-700 hover:text-amber-800">
-                                        <span>Ibu (WBI)</span>
-                                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                                    </a>
-                                </div>
-                            </div>
-
+                            </template>
                         </div>
                     </div>
-                </section>
 
-                <!-- BERGABUNG BERSAMA KAMI BANNER - Mengajak Jemaat Baru Bergabung -->
-                <section class="py-16 bg-blue-950 text-white relative text-center">
-                    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
-                        <h2 class="text-3xl font-bold font-display tracking-tight text-white leading-tight">
-                            Mari Bertumbuh Bersama dalam Kasih Kristus
-                        </h2>
-                        <p class="text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
-                            Pintu kami selalu terbuka lebar bagi setiap jiwa yang mencari kebenaran, kesembuhan batin, bimbingan rohani, dan persekutuan jemaat yang hangat di Jayapura.
-                        </p>
-                        <div class="flex justify-center gap-4 pt-2">
-                            <a href="kontak.html" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/10">
-                                Hubungi Kami & Lokasi Ibadah
-                            </a>
+                    <!-- VIDEO PLAYER MODAL -->
+                    <div x-show="activeVideoUrl !== null" 
+                         class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+                         x-cloak>
+                        <div x-show="activeVideoUrl !== null" 
+                             x-on:click.away="activeVideoUrl = null"
+                             class="bg-black rounded-3xl overflow-hidden max-w-4xl w-full shadow-2xl relative aspect-video border border-slate-800">
+                            <button x-on:click="activeVideoUrl = null" 
+                                    class="absolute top-4 right-4 p-2 bg-slate-900/80 hover:bg-slate-950/90 rounded-full text-white z-50 cursor-pointer transition-colors">
+                                <i data-lucide="x" class="w-5 h-5"></i>
+                            </button>
+                            <template x-if="activeVideoUrl !== null">
+                                <iframe :src="activeVideoUrl + '?autoplay=1'" class="w-full h-full animate-fade-in" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </template>
                         </div>
                     </div>
-                </section>
 
+                </div>
             </div>
         </main>
     </div>
