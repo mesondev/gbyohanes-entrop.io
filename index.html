@@ -661,39 +661,6 @@
                     </div>
                 </section>
 
-                <!-- 3. KEY STATS -->
-                <section class="py-16 bg-white border-b border-slate-100">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                            
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="users" class="w-7 h-7 text-blue-800 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">350+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Jemaat Aktif</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="church" class="w-7 h-7 text-amber-600 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">14+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Komisi Pelayanan</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="heart-handshake" class="w-7 h-7 text-rose-500 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">12+</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Wilayah Sel/Sektor</div>
-                            </div>
-
-                            <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <i data-lucide="award" class="w-7 h-7 text-emerald-600 mx-auto"></i>
-                                <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">45 Th</div>
-                                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Melayani di Papua</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
                 <!-- SAMBUTAN GEMBALA & TENTANG KAMI SECTION / BAGIAN SAMBUTAN & TENTANG GEREJA -->
                 <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-100">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
@@ -768,10 +735,76 @@
                             </div>
                         </div>
 
+                        <!-- KEY STATS (Moved here in the middle between Sambutan and Tentang Kami as requested) -->
+                        <div class="py-10 border-y border-slate-200/60">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                                
+                                <div class="space-y-1.5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                                    <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-2">
+                                        <i data-lucide="users" class="w-5 h-5 text-blue-800"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">350+</div>
+                                    <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Jemaat Aktif</div>
+                                </div>
+
+                                <div class="space-y-1.5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                                    <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center mx-auto mb-2">
+                                        <i data-lucide="church" class="w-5 h-5 text-amber-600"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">14+</div>
+                                    <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Komisi Pelayanan</div>
+                                </div>
+
+                                <div class="space-y-1.5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                                    <div class="w-10 h-10 rounded-full bg-rose-50 flex items-center justify-center mx-auto mb-2">
+                                        <i data-lucide="heart-handshake" class="w-5 h-5 text-rose-500"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">12+</div>
+                                    <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Wilayah Sel/Sektor</div>
+                                </div>
+
+                                <div class="space-y-1.5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-2">
+                                        <i data-lucide="award" class="w-5 h-5 text-emerald-600"></i>
+                                    </div>
+                                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-950 font-display">45 Th</div>
+                                    <div class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Melayani di Papua</div>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <!-- 2. Tentang Kami (About Us) -->
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 border-t border-slate-200/60 items-center">
-                            <!-- Deskripsi & Sejarah Singkat -->
-                            <div class="lg:col-span-6 space-y-6">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 items-center">
+                            <!-- Gambar Tentang Kami (Samping Kiri) as requested by user -->
+                            <div class="lg:col-span-6 flex justify-center lg:order-1">
+                                <div class="relative w-full max-w-lg">
+                                    <div class="absolute -inset-1 bg-gradient-to-tr from-amber-500 to-blue-900 rounded-3xl blur opacity-20"></div>
+                                    <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-slate-100">
+                                        <img src="/assets/image/church_about_us.jpg" 
+                                             alt="Gedung Gereja Baptis Yohanes Entrop" 
+                                             referrerPolicy="no-referrer"
+                                             class="w-full h-72 sm:h-96 object-cover rounded-2xl" />
+                                        
+                                        <!-- Floating badge/caption on the image -->
+                                        <div class="absolute bottom-6 left-6 right-6 bg-slate-900/95 border border-white/10 backdrop-blur-md px-4 py-3 rounded-2xl flex items-center justify-between">
+                                            <div class="space-y-0.5">
+                                                <span class="block text-[10px] font-bold text-amber-400 uppercase tracking-wider">Tentang Kami</span>
+                                                <span class="block text-xs font-semibold text-white">GBY Entrop Jayapura, Papua</span>
+                                            </div>
+                                            <div class="w-8 h-8 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+                                                <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Decorative corner highlights -->
+                                    <div class="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-amber-500 rounded-br-xl z-[-1]"></div>
+                                    <div class="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-blue-900 rounded-tl-xl z-[-1]"></div>
+                                </div>
+                            </div>
+
+                            <!-- Deskripsi, Sejarah Singkat & Pilar (Samping Kanan) -->
+                            <div class="lg:col-span-6 space-y-6 lg:order-2">
                                 <div class="space-y-2">
                                     <span class="text-blue-900 font-bold text-xs uppercase tracking-wider block">Mengenal Kami</span>
                                     <h2 class="text-3xl font-bold font-display text-blue-950 tracking-tight leading-tight">
@@ -786,51 +819,43 @@
                                         Kami percaya bahwa iman sejati melahirkan perbuatan kasih. Oleh karena itu, pelayanan kami tidak hanya terbatas di dalam gedung ibadah pada hari Minggu, melainkan menjangkau pelayanan kategorial anak, pemuda, kaum pria, kaum wanita, persekutuan sel di rumah-rumah jemaat, misi sosial di pedalaman Papua, hingga pelayanan konseling keluarga Kristen.
                                     </p>
                                 </div>
+                                
+                                <!-- 3 Pilar Pelayanan (Berakar, Bertumbuh, Berbuah) - Di bawah Teks Sebelah Kanan -->
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-slate-200/60">
+                                    <div class="flex items-center space-x-2.5 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+                                        <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center shrink-0">
+                                            <i data-lucide="arrow-down-to-dot" class="w-4.5 h-4.5 text-blue-700"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xs font-bold text-blue-950 leading-none">Berakar</h4>
+                                            <span class="text-[10px] text-slate-500 font-light mt-0.5 block leading-tight">Iman Kokoh</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2.5 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+                                        <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center shrink-0">
+                                            <i data-lucide="trending-up" class="w-4.5 h-4.5 text-amber-600"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xs font-bold text-blue-950 leading-none">Bertumbuh</h4>
+                                            <span class="text-[10px] text-slate-500 font-light mt-0.5 block leading-tight">Karakter Mulia</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2.5 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+                                        <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                                            <i data-lucide="leaf" class="w-4.5 h-4.5 text-emerald-600"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xs font-bold text-blue-950 leading-none">Berbuah</h4>
+                                            <span class="text-[10px] text-slate-500 font-light mt-0.5 block leading-tight">Melayani Sesama</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="flex gap-4 pt-2">
                                     <a href="profil.html?sub=sejarah" class="inline-flex items-center space-x-2 text-xs font-bold text-blue-900 hover:text-blue-950 transition-colors">
                                         <span>Baca Sejarah Lengkap</span>
                                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                     </a>
-                                </div>
-                            </div>
-
-                            <!-- Pilar Nilai Pelayanan (Cards) -->
-                            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
-                                <!-- Pilar 1 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center shrink-0">
-                                        <i data-lucide="arrow-down-to-dot" class="w-5 h-5 text-blue-700"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Berakar (Rooted)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Memiliki dasar iman yang kuat kepada Yesus Kristus serta doktrin Alkitab yang sejati dan tidak tergoyahkan oleh zaman.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Pilar 2 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center shrink-0">
-                                        <i data-lucide="trending-up" class="w-5 h-5 text-amber-600"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Bertumbuh (Growing)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Terus mendewasakan karakter rohani jemaat, ketaatan rohani, serta ikatan kasih persaudaraan sejati yang saling menopang.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Pilar 3 -->
-                                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
-                                        <i data-lucide="leaf" class="w-5 h-5 text-emerald-600"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <h4 class="text-sm font-bold font-display text-blue-950">Berbuah (Fruitful)</h4>
-                                        <p class="text-xs text-slate-500 font-light leading-relaxed">
-                                            Aktif mengabarkan kabar baik Injil, melayani sesama lewat pelayanan kasih nyata, serta menjadi berkat di mana pun jemaat diutus.
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -949,8 +974,8 @@
                 <!-- Column 1 -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
-                            <i data-lucide="church" class="w-6 h-6 text-blue-950"></i>
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center p-1.5 shadow-md overflow-hidden shrink-0">
+                            <img src="/assets/image/logo.svg" alt="Logo GBY Entrop" class="w-8 h-8 object-contain" />
                         </div>
                         <span class="font-display font-bold text-lg text-white tracking-wide uppercase">
                             Gereja Baptis Yohanes
